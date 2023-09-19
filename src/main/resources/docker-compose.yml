@@ -1,0 +1,15 @@
+version: "3"
+services:
+  datassistmongodb:
+    image: mongo:latest
+    container_name: "datassistmongodb"
+    ports:
+      - 27017:27017
+  rest:
+    image: rest:1.0
+    container_name: rest
+    ports:
+      - 8080:8080
+    links:
+      - datassistmongodb  
+    

@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: Employee
+      host: datassistmongodb
+      port: 27017
